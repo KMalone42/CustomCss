@@ -1,0 +1,244 @@
+/* ==UserStyle==
+@name           discord.com/channels/@me
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://discord.com/channels/") {
+    /* Insert code here... */
+    body {
+      --chat-input-container-background:var(#FF0000); /* may be the chat thing*/
+      --background-color          : #FF0000 !important; /* may not be a real variable*/
+      --text-secondary            : #FFFFFF !important; /* "forwarding text" */
+      --background-modifier-accent: #383838 !important; /* random lines */
+      --background-modifier-active: #35A855 !important; /* modifies channel highlight when active... never mind maybe this is the online dot?*/
+      --background-modifier-hover : #35A855 !important; /* modifies channel highlight when hover */
+      --background-primary        : #404040 !important; /* primary background*/
+      --background-secondary      : #383838 !important; /* text channels / open dms */
+      --background-secondary-alt  : #2B2B2B !important; /* background on the part where it shows your account*/
+      --background-tertiary       : #2B2B2B !important; /* Left most server bar*/
+      --button--underline-color   : #FFFFFF !important; /* dunno */
+      --chat-background           : #FFFFFF !important; /* dunno */
+      --header-primary            : #FFFFFF !important; /* server has unread messages ribbon, "invite friends to" text color */
+      --interactive-active        : #FFFFFF !important; /* server unread channel accent */
+      --interactive-normal        : #FFFFFF !important; /* This is pretty much every button, mic, deafen, settings */
+      --modal-background          : #383838 !important; /* invite people to server/forwarding bg + gear color mostly seen when admin */ 
+      --input-background          : #2B2B2B !important; /* this may be the search bar in the "search for servers"*/
+      --custom-channel-members-bg : #383838 !important; /* server user list right bar */
+        
+
+      .uploadInput_f298d4{
+        background: white !important;
+      }
+      
+      .scrollableContainer_bdf0de, .textArea_bdf0de{
+      background: #383838 !important;
+      }
+      /**.textArea_bdf0de{
+        background: red !important;
+      }
+      /**.channelTextArea_a7d72e{
+        background: white !important;
+      }
+      /**.channelBottomBarArea_a7d72e{
+        background: white !important;
+      }
+      .chat_a7d72e{
+        background: white !important;
+      }
+      **/ 
+      background: #FFC0CB !important;   
+      --font-primary: URW Chancery L, cursive !important; /* changes font */
+      --text-normal               : #FFFFFF !important; /* message text color*/
+      --text-danger               : #FFFFFF !important; /* most likely new/mention text dunno */
+      --text-muted                : #FFFFFF !important; /* timestamps*/
+      --text-link                 : #35A855 !important; /* hyperlinks*/
+
+
+      --white    : #FFFFFF !important; /* changes the megaphone icon on the server voice channel popup */
+
+	    --primary-130    : #FFFFFF !important; /* boosted server dropdown */
+      --primary-230    : #FFFFFF !important; /* controls the text color of the bubble when hovering a server */
+      --primary-330    : #FFFFFF !important; /* controls the text color of the server arrow drop down*/
+      --primary-360    : #FFFFFF !important; /* search options text color */
+      --primary-600    : #35A855 !important; /* edit status*/
+      --primary-660    : #383838 !important; /* one of these is the default background on user profiles*/
+      --primary-800    : #35A855 !important; /* one of these is the background on the server name popup*/
+      --primary-830    : #00FFFF !important; /* dunno */
+        
+      --brand-360    : #FFFFFF !important; /* server invite text*/
+      --brand-500    : #35A855 !important; /* app-tag background*/
+      --brand-560    : #FFFFFF !important; /* server option dropdown active selection */
+
+
+      --primary-200    : #FF0000 !important; /* dunno */
+      --primary-400    : #FFFFFF !important; /* checkbox and other sort of things border */
+      --primary-430    : #FF00FF !important; /* dunno */
+      --primary-460    : #FFFF00 !important; /* dunno */
+      --primary-500    : #2B2B2B !important; /* interesting profile button */
+      --primary-530    : #FFFF00 !important; /* may be checkbox and other sort of things border dunno */
+      --primary-560    : #35A855 !important; /* profile status */
+      --primary-630    : #2B2B2B !important; /* inbox background */
+      --primary-645    : #00FF00 !important; /* dunno */
+      --primary-700    : #2B2B2B !important; /* stream box background*/
+      --primary-730    : #00FF00 !important; /*  most likely new/mention text dunno */
+      --primary-860    : #2B2B2B !important; /* the microphone icon while you're in a call */
+      --primary-900    : #00FF00 !important; /* dunno */
+      --brand-100    : #FF0000 !important; /* dunno */
+      --brand-130    : #FF0000 !important; /* dunno */
+      --brand-160    : #FF0000 !important; /* dunno */
+      --brand-200    : #FF0000 !important; /* dunno */
+      --brand-230    : #FF0000 !important; /* dunno */
+      --brand-260    : #35A855 !important; /* new/unread messages popup background */
+      --brand-300    : #FFFF00 !important; /* dunno */
+      --brand-330    : #00FFFF !important; /* dunno */
+      --brand-345    : #FF0000 !important; /*  dunno */
+      --brand-400    : #35A855 !important; /* checkbox selected border dunno */
+      --brand-430    : #00FFFF !important; /* dunno */
+      --brand-460    : #00FFFF !important; /* dunno */
+      --brand-530    : #00FFFF !important; /* dunno */
+      --brand-600    : #00FFFF !important; /* dunno */
+      --brand-630    : #00FFFF !important; /* dunno */
+      --brand-660    : #FFFFFF !important; /* dunno */
+      --brand-700    : #FF0000 !important; /* dunno */
+      --brand-730    : #FF0000 !important; /* dunno */
+      --brand-760    : #00FF00 !important; /* dunno */
+      --brand-800    : #FFFF00 !important; /* dunno */
+      --brand-830    : #FFFF00 !important; /* dunno */
+      --brand-860    : #FFFF00 !important; /* dunno */
+      --brand-900    : #FFFF00 !important; /* dunno */
+
+      --neutral-56: #35A855 !important; /* this set here seems to change the color of a currently selected channel */
+      --neutral-60: #35A855 !important; /* there also seems to be a change with the vc-bubble indicating that people are chatting in server */
+      --neutral-64: #FFFF00 !important; /* no idea what this is*/
+      --neutral-68: #35A855 !important; /* maybe this is not the status*/
+        
+      --background-accent                 : #35A855 !important; /* icon when current vc in server. needs comments these were all 35A855*/
+      --background-floating               : #2B2B2B !important; /* while in a call this is the background */
+      --background-message-highlight      : #35A855 !important; /* active selection/replying to message */
+      --background-message-highlight-hover: #FFFF00 !important; /* needs comments */
+      --background-modifier-selected      : #35A855 !important; /* currently selected item */
+      --background-nested-floating        : #35A855 !important; /* appears top right when hovered message to reply */
+
+      --bg-mod-faint : #383838 !important; /* threads bg*/ 
+      --bg-mod-subtle: #35A855 !important; /* guild tag while in call?*/ 
+      --bg-mod-strong: #35A855 !important; /* guild tag*/
+
+        --white-hsl:       294 calc(var(--saturation-factor, 1) * 0%) 0%; /* last thing was*/
+        --black-hsl:       294 calc(var(--saturation-factor, 1) * 0%) 0%; /* */
+        --primary-500-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ; /* dunno */
+        --primary-600-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ; /* one of these might be the status */
+        --primary-660-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/*  most likely new/mention text dunno dunno */
+        --primary-700-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* one of these may be inbox checkmark bg or stream box background*/
+        --primary-730-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* may be checkbox and other sort of things border dunno */
+        --primary-800-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* not test profile status */
+        --primary-830-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* one of these are interesting profile button */
+        --primary-900-hsl: 294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* most likely new/mention text dunno dunno */
+        --brand-100-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-130-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-160-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-200-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-230-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-260-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-300-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-330-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-345-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/*  dunno */
+        --brand-360-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-400-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-430-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-460-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-500-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-530-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-560-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-600-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-630-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-660-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-700-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-730-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-760-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-800-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-830-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-860-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+        --brand-900-hsl:   294 calc(var(--saturation-factor, 1) * 6.024%) 100% !important ;/* dunno */
+    }
+
+    /* .folder-21wGz3.hover-2ji_A7, */
+    .circleIconButton-jET_ig.selected-ugP_am,
+    .actionButton-uPB8Fs:hover {
+    background-color: rgba(67,181,129,0.33) !important;
+    }
+    .circleIconButton-jET_ig,
+    .actionButton-uPB8Fs,
+    .wrapper-21YSNc > .listItem-2P_4kh .svg-1X37T1,
+    .folderIconWrapper-226oVY {
+    border-radius: 15% !important;
+    }
+        
+        /* bubble sorting
+        54321
+        45321
+        43521
+        43251
+        43215
+        
+        public class BubbleSort {
+         public static void bubbleSort(int[] array){
+         int n = array 
+
+         if(array[j] > array[j+1]({ //comparing current elemnt to next adjacent element
+           int temp + array[j];
+           array[j] = array [j+1];
+           array[j+1] = temp;
+         }
+
+         time complexity of 0(n^2)
+        */
+    
+    /* Post with new messages */
+    /*
+    #app-mount .mainCard_a6d69a:has([class*=newMessageCount])::before {
+      background: var(--n-blue-stroke);
+    }
+
+
+    #app-mount .message_ddcc45 {
+    background: var(--background-secondary);
+    box-shadow: var(--elevation-medium);
+    }
+
+    .messageGroupWrapper_ac90a2 {
+    background: var(--n-yellow-canvas);
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--elevation-card);
+    margin: 0 0 16px;
+    }
+
+    .messageGroupWrapper_ac90a2::before,
+    .recentMentionsPopout_ddb5b4 .container_ddb5b4::before,
+    .recentMentionsPopout_ddb5b4 .channel_d09ffd::before {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: var(--n-yellow-stroke);
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+
+    .messagesPopoutWrap_ac90a2 {
+    max-height: 78vh !important;
+    background: var(--background-primary);
+    box-shadow: var(--elevation-high);
+    border-radius: 8px;
+    }
+
+
+    .messagesPopout_ac90a2 {
+    padding: 16px 8px 0 16px !important;
+    }
+
+ */
+}
