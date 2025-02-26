@@ -1,7 +1,17 @@
+/* for blue boards */
 /* https://s.4cdn.org/css/yotsubluenew.715.css */
+/* Default Color */
+/* 
+#EEF2FF
+#D6DAF0
+#B7C5D9
+
+#D6BAD0
+#BA9DBF
+*/
 
 body {
-	background: #edc9e9 url(/image/fade-blue.png) top center repeat-x;
+	background: #feeeff url(/image/fade-blue.png) top center repeat-x !important;
 
 	color: #000000;
 	font-family: arial, helvetica, sans-serif;
@@ -15,16 +25,91 @@ body {
 	padding-right: 5px;
 }
 
-/* css selector for replies */
-.disclaimer-modal {
-  z-index: 9999;
-  width: 320px;
-  top: 0;
-  left: 50%;
-  margin-left: -170px;
-  display: block;
-  padding: 10px;
-  position: relative;
-  background-color: #edd6c9 !important;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+/* This is an example of a class selector*/
+/* you can find the css file and line number while inspecting element at around the bottom of the selection */
+div.reply {
+	background-color: #f0d6ee;
+
+	border: 1px solid #d9b7d1;
+	border-left: none;
+	border-top: none;
+
+	display: table;
+
+	padding: 2px;
 }
+
+.reply:target, .reply.highlight {
+	background: #00e9fa !important;
+	border: 1px solid #f80000 !important;
+	border-left: none !important;
+	border-top: none !important;
+	padding: 2px;
+}
+
+.highlightPost:not(.op) {
+	background: #df7a7a !important;
+	border-color: #f09711 !important;
+}
+
+/* pngs inherit a background color this is my attempt at fixing that*/
+/* the following all have to do with reply links and colors*/
+a, a:visited {
+	color: #34345C !important;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #DD0000 !important;
+}
+
+.quoteLink, .quotelink, .deadlink {
+	color: #D00 !important;
+	text-decoration: underline;
+}
+
+/* post form backing */
+table.postForm > tbody > tr > td:first-child {
+	background-color: #98E;
+	color: #000;
+	font-weight: bold;
+	border: 1px solid #000;
+	padding: 0 5px;
+
+	font-size: 10pt;
+}
+
+
+/* header for nsfw boards */
+/* https://s.4cdn.org/css/yotsubanew.715.css */
+/*body {
+	background: #FFFFEE url(/image/fade.png) top center repeat-x;
+
+	color: #800000;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10pt;
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.reply {
+	background-color: #f0e0d6;
+
+	border: 1px solid #D9BFB7;
+	border-left: none;
+	border-top: none;
+
+	display: table;
+
+	padding: 2px;
+}
+
+div.reply input {
+	float: none;
+}
+*/
