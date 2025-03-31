@@ -1,0 +1,38 @@
+/* linux mint theme */
+/* by u/kmyc9*/
+@-moz-document url-prefix("https://discord.com/channels/") {
+    body{
+        /* main colors still looking for the server bar*/
+        --background-base-low    : #404040 !important; 
+        --background-base-lower  : #404040 !important;
+        --background-base-lowest : #383838 !important; /* main chat area*/
+        --bg-base-tertiary       : #2B2B2B !important; /* side bar and server bar background*/
+        --chat-background-default: #35A855 !important; /* chatbox bottom of screen*/
+
+        --autocomplete-bg     : #00FFFF !important;
+        --background-floating : #00FFFF !important;
+
+        --background-surface-high   : #FF0000 !important; /* this is friends activity feed may not be needed*/
+        --backgorund-surface-highest: #FF0000 !important;
+
+        --background-surface-higher : #35A855 !important; /* top left discord icon important*/ 
+        --text-brand                : #35A855 !important;
+        --text-link                 : #35A855 !important;
+        --bg-brand                  : #35A855 !important;
+        /* not really sure, this this should be green was discord blurple*/
+        --checkbox-border-checked : #FFFFFF !important;
+        /* sidebar_c48ade*/
+        div.sidebar_c48ade {
+            background-color: #FFFFFF;
+
+        }
+
+        /* these are the */
+        --background-primary     : #FF0000 !important;
+        --background-secondary   : #00FF00 !important;
+        --background-tertiary    : #0000FF !important;
+        --bg-base-primary        : #FFFF00 !important;
+        --bg-base-secondary      : #00FFFF !important;
+        
+    }
+}
