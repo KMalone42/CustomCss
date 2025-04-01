@@ -1,38 +1,57 @@
 /* linux mint theme */
 /* by u/kmyc9*/
 @-moz-document url-prefix("https://discord.com/channels/") {
-    body{
-        /* main colors still looking for the server bar*/
-        --background-base-low    : #404040 !important; 
-        --background-base-lower  : #404040 !important;
-        --background-base-lowest : #383838 !important; /* main chat area*/
-        --bg-base-tertiary       : #2B2B2B !important; /* side bar and server bar background*/
-        --chat-background-default: #35A855 !important; /* chatbox bottom of screen*/
+    :root, theme.dark, .visual-refresh{
+        /* linux mint color palette */
+        --linux-bg-light     : #404040 !important;
+        --linux-bg-middle    : #383838 !important;
+        --linux-bg-middler   : #353535 !important;
+        --linux-bg-dark      : #2B2B2B !important;
+        --linux-bg-darkest   : #292929 !important;
 
-        --autocomplete-bg     : #00FFFF !important;
-        --background-floating : #00FFFF !important;
+        --mint-green-light   : #8BB158 !important;
+        --mint-green-dark    : #35A854 !important;
+        --mint-green-darkest : #688442 !important;
 
-        --background-surface-high   : #FF0000 !important; /* this is friends activity feed may not be needed*/
-        --backgorund-surface-highest: #FF0000 !important;
+        /* overrides for brand colors */
+        --button-filled-brand-background: var(--mint-green-dark) !important;
+        --background-surface-higher     : var(--mint-green-dark) !important; /* top left discord icon important*/ 
+        --text-brand                    : var(--mint-green-dark) !important;
+        --text-link                     : var(--mint-green-dark) !important;
+        --bg-brand                      : var(--mint-green-dark) !important;
+    }
 
-        --background-surface-higher : #35A855 !important; /* top left discord icon important*/ 
-        --text-brand                : #35A855 !important;
-        --text-link                 : #35A855 !important;
-        --bg-brand                  : #35A855 !important;
-        /* not really sure, this this should be green was discord blurple*/
-        --checkbox-border-checked : #FFFFFF !important;
-        /* sidebar_c48ade*/
-        div.sidebar_c48ade {
-            background-color: #FFFFFF;
+    body {
+        --bg-base-tertiary       : var(--linux-bg-dark) !important; /* server bar */
 
-        }
+        --background-base-lowest : var(--linux-bg-middle) !important; /* server text chat area*/
+        --background-base-low    : var(--linux-bg-middler) !important; /* bottom left profile box*/ 
 
-        /* these are the */
-        --background-primary     : #FF0000 !important;
-        --background-secondary   : #00FF00 !important;
-        --background-tertiary    : #0000FF !important;
-        --bg-base-primary        : #FFFF00 !important;
-        --bg-base-secondary      : #00FFFF !important;
-        
+        --background-base-lower  : var(--linux-bg-light) !important; /* main chat area*/
+        --chat-background-default: var(--linux-bg-middler) !important; /* chatbox bottom of screen*/
+
+
+       /* when typing / commands */ 
+        --background-surface-high: var(--bg-base-tertiary) !important;
+        --autocomplete-bg     : var(--background-base-lowest) !important;
+
+        /* go to the friends tab to see these in effect*/
+        --background-tertiary : var(--linux-bg-middle)!important; /* blocked and ignored*/
+        --background-secondary: var(--linux-bg-middle)!important; /* random buttons */
+        --background-primary  : var(--linux-bg-dark) !important;
+    }
+    /* targets specifically the discord icon on top of screen*/
+    svg[width="16"][height="16"] > path[fill="var(--interactive-normal)"] {
+        fill: var(--mint-green-light) !important;
+    }
+
+    .visual-refresh .container__9293f {
+        background               : #2B2B2B !important;
+        --__header-bar-background: #2B2B2B !important;
+    }
+    /* profile card*/
+    :where(.outer_c0bea0) {
+        background                  : #383838 !important; 
+        --profile-body-divider-color: #383838 !important;
     }
 }
