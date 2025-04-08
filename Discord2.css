@@ -84,6 +84,26 @@
     }
     /* settings*/
     .container__87bf1, checked__87bf1, slider__87bf1 {
-        background-color: red !important;
+        background-color: var(--mint-green-light) !important;
     }
+
+    /* message content*/
+    .gridContainer__623de, grid__623de{
+        background : var(--linux-bg-middle) !important;
+    }
+
+    .barBase__0f481, newMessagesBar__0f481{
+        background : var(--mint-green-dark) !important;
+    }
+    /* Inbox*/
+    .messagesPopoutWrap__45690 {
+        background : var(--linux-bg-dark) !important;
+    }
+    .messagePopout__45690, scroller__95796, thin_d125d2, scrollerBase_d125d2{
+        background: var(--linux-bg-middle) !important;
+    }
+    .messageContainer_95796{
+        background : var(--linux-bg-light) !important;
+    }
+
 }
