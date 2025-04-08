@@ -19,6 +19,7 @@
         --text-brand                    : var(--mint-green-dark) !important;
         --text-link                     : var(--mint-green-dark) !important;
         --bg-brand                      : var(--mint-green-dark) !important;
+        --brand-360                     : var(--mint-green-dark) !important;
     }
 
     body {
@@ -53,5 +54,36 @@
     :where(.outer_c0bea0) {
         background                  : #383838 !important; 
         --profile-body-divider-color: #383838 !important;
+    }
+    /* these two are apart of the gif selector*/
+    .contentWrapper__08434{
+    background : var(--linux-bg-dark) !important;
+    }
+    .header__8ef02 {
+        background: var(--linux-bg-middle) !important;
+    }
+    .container_a4028 {
+        /* this should be the border of the input that is showing discord color but idk*/
+        border    : blue !important;
+        background: green !important;
+            /*--input-background: */
+    }
+    .visual-refresh .inspector_aeaaeb {
+        background: var(--linux-bg-light) !important ;
+        background-color: var(--background-base-lower);
+        border-top: 1px solid var(--border-normal);
+    }
+    .wrapper__14245{
+        background : var(--linux-bg-light) !important;
+    }
+    .upsell_ac65bb {
+        background-color: var(--linux-bg-light) !important;
+    }
+    .wrapper__4e6ce {
+        background : var(--linux-bg-dark) !important;
+    }
+    /* settings*/
+    .container__87bf1, checked__87bf1, slider__87bf1 {
+        background-color: red !important;
     }
 }
